@@ -57,16 +57,17 @@
         
       },
       handleProjectLoaded:() => {
+        window.scratch.setProjectName("Custom Project")
         console.log("作品载入完毕")
 
       },
       handleDefaultProjectLoaded:() => {
-        //默认作品加载完毕，一般在这里控制项目加载
-        // window.scratch.setProjectName("默认项目")
-        //  window.scratch.loadProject("/project.sb3", () => { 
-        //     console.log("项目加载完毕")
-        //     window.scratch.setProjectName("默认项目")
-        //  })
+
+         window.scratch.setProjectName("FunBlockz Project")
+          window.scratch.loadProject("/project.sb3", () => { 
+             console.log("项目加载完毕")
+            window.scratch.setProjectName("FunBlockz Project")
+          })
       },
       //默认项目地址,不需要修请删除本配置项
       // defaultProjectURL: "./static/project.sb3",
